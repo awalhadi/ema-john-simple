@@ -1,0 +1,24 @@
+.product{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+.product img{
+    width: 15rem;
+}
+.product-img{
+    margin-right: 7px;
+}
+.product-name{
+    color: blue;
+}
+.addto-cart-btn{
+    width: 9rem;
+    height: 2rem;
+    background-color: goldenrod;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    cursor: pointer;
+}

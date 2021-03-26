@@ -19,6 +19,7 @@
     padding: 9px;
 }
 
-.header a:hover{
+.header .navLink:hover{
     background-color: darkslategray;
+    text-decoration: none;
 }

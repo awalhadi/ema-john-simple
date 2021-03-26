@@ -11,14 +11,9 @@
 .product-img{
     margin-right: 7px;
 }
-.product-name{
+/* .product-name{
     color: blue;
-}
+} */
 .addto-cart-btn{
-    width: 9rem;
-    height: 2rem;
-    background-color: goldenrod;
-    border: 1px solid darkgoldenrod;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 11rem;
 }

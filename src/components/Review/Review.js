@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import fakeData from '../../fakeData';
-import { getDatabaseCart, removeFromDatabaseCart } from '../../utilities/databaseManager';
+import { getDatabaseCart, processOrder, removeFromDatabaseCart } from '../../utilities/databaseManager';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
+import happyImage from '../../images/giphy.gif';
 
 const Review = () => {
     const [cart, setCart] = useState([]);
+    const [placeOrder, setPlaceOrder] = useState(false);
+
+    const handlePlaceOrder = () => {
+        setCart([]);
+        setPlaceOrder(true);
+        processOrder();
+    }
 
     useEffect( () => {
         const cartProducts = getDatabaseCart();
@@ -23,6 +31,10 @@ const Review = () => {
         setCart(product);
         removeFromDatabaseCart(productKey);
     }
+    let thankyouImage;
+    if (placeOrder) {
+        thankyouImage = <img src={happyImage} alt=""/>;
+    }
 
     return (
         <div className="shop-container">
@@ -36,10 +48,13 @@ const Review = () => {
 
                     </ReviewItem>)
                 }
+                { thankyouImage }
             </div>
 
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}>
+                <button onClick={handlePlaceOrder} className="addto-cart-btn btn btn-warning">Place Order</button>
+                </Cart>
             </div>
         </div>
     );

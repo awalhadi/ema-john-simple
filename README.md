@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Ema Jhon simple commerce react website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [React](https://github.com/facebook/create-react-app).
+
+# Ema Jhon simple commerce website
+
+Go to [live preview](https://hadi-ema-john.netlify.app/).
 
 ## Available Scripts
 
@@ -68,4 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # ema-john-simple
